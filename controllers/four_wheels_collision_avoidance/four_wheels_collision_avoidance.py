@@ -25,7 +25,7 @@ while robot.step(TIME_STEP) != -1:
         for i in range(2):
             if ds[i].getValue() < 950.0:
                 avoidObstacleCounter = 100
-    wheels[0].setVelocity(leftSpeed)
+    wheels[0].setVelocity(-leftSpeed)
     wheels[1].setVelocity(rightSpeed)
-    wheels[2].setVelocity(leftSpeed)
+    wheels[2].setVelocity(-leftSpeed)
     wheels[3].setVelocity(rightSpeed)
